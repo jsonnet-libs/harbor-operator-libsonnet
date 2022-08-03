@@ -1,0 +1,16 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='v1alpha3', url='', help=''),
+  chartMuseum: (import 'chartMuseum.libsonnet'),
+  core: (import 'core.libsonnet'),
+  exporter: (import 'exporter.libsonnet'),
+  harbor: (import 'harbor.libsonnet'),
+  harborCluster: (import 'harborCluster.libsonnet'),
+  jobService: (import 'jobService.libsonnet'),
+  notaryServer: (import 'notaryServer.libsonnet'),
+  notarySigner: (import 'notarySigner.libsonnet'),
+  portal: (import 'portal.libsonnet'),
+  registry: (import 'registry.libsonnet'),
+  registryController: (import 'registryController.libsonnet'),
+  trivy: (import 'trivy.libsonnet'),
+}
