@@ -47,7 +47,7 @@
     apiVersion: 'goharbor.io/v1beta1',
     kind: 'HarborServerConfiguration',
   } + self.metadata.withName(name=name) + self.metadata.withAnnotations(annotations={
-    'tanka.dev/namespaced': 'true',
+    'tanka.dev/namespaced': 'false',
   }),
   '#spec':: d.obj(help='"HarborServerConfigurationSpec defines the desired state of HarborServerConfiguration."'),
   spec: {
